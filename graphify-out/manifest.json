@@ -1,0 +1,186 @@
+{
+  "agritwin/__init__.py": {
+    "mtime": 1795536323.6017735,
+    "seen": 1795540237.6996891,
+    "ast_hash": "3c5e51364932e37abada5593fc50fcda",
+    "semantic_hash": "3c5e51364932e37abada5593fc50fcda"
+  },
+  "agritwin/advisory/__init__.py": {
+    "mtime": 1795536363.9234705,
+    "seen": 1795540237.700158,
+    "ast_hash": "7fc5265b09e9d25682bc7fb5a7ba2fd1",
+    "semantic_hash": "7fc5265b09e9d25682bc7fb5a7ba2fd1"
+  },
+  "agritwin/api/__init__.py": {
+    "mtime": 1795536381.1972182,
+    "seen": 1795540237.7008502,
+    "ast_hash": "78fd489408de6b2ef838bb995e78149c",
+    "semantic_hash": "78fd489408de6b2ef838bb995e78149c"
+  },
+  "agritwin/core/__init__.py": {
+    "mtime": 1795536326.947241,
+    "seen": 1795540237.7012565,
+    "ast_hash": "b1a97008ed8967688a118ccbdabf1bd8",
+    "semantic_hash": "b1a97008ed8967688a118ccbdabf1bd8"
+  },
+  "agritwin/core/config.py": {
+    "mtime": 1795536626.1526682,
+    "seen": 1795540237.7015743,
+    "ast_hash": "ce39103156fd6078a65aa8c9e78f82a9",
+    "semantic_hash": "ce39103156fd6078a65aa8c9e78f82a9"
+  },
+  "agritwin/core/database.py": {
+    "mtime": 1795538169.3924522,
+    "seen": 1795540237.7018974,
+    "ast_hash": "7fe04b6a1be3477748066f46bc21a8ce",
+    "semantic_hash": "7fe04b6a1be3477748066f46bc21a8ce"
+  },
+  "agritwin/core/models.py": {
+    "mtime": 1795538169.3924522,
+    "seen": 1795540237.7023222,
+    "ast_hash": "89464a555a0ba593ce631c9130d93047",
+    "semantic_hash": "89464a555a0ba593ce631c9130d93047"
+  },
+  "agritwin/core/seed.py": {
+    "mtime": 1795538169.3924522,
+    "seen": 1795540237.7027278,
+    "ast_hash": "d71588dcbc01270117f7e2b5e18acd2e",
+    "semantic_hash": "d71588dcbc01270117f7e2b5e18acd2e"
+  },
+  "agritwin/data/__init__.py": {
+    "mtime": 1795536347.2791286,
+    "seen": 1795540237.7031198,
+    "ast_hash": "2eee29dc2935bcad4323c2427149027d",
+    "semantic_hash": "2eee29dc2935bcad4323c2427149027d"
+  },
+  "agritwin/data/fixtures.py": {
+    "mtime": 1795537644.2398088,
+    "seen": 1795540237.7034304,
+    "ast_hash": "365c67237e512fd41913b96ee5d8c77d",
+    "semantic_hash": "365c67237e512fd41913b96ee5d8c77d"
+  },
+  "agritwin/data/satellite.py": {
+    "mtime": 1795537644.2398088,
+    "seen": 1795540237.7037232,
+    "ast_hash": "be8c77ebac45a6d88c877a299118b01a",
+    "semantic_hash": "be8c77ebac45a6d88c877a299118b01a"
+  },
+  "agritwin/data/soil.py": {
+    "mtime": 1795537644.2398088,
+    "seen": 1795540237.704017,
+    "ast_hash": "a20de8d8bad5eb1d35d847ed68640e89",
+    "semantic_hash": "a20de8d8bad5eb1d35d847ed68640e89"
+  },
+  "agritwin/data/weather.py": {
+    "mtime": 1795537644.2398088,
+    "seen": 1795540237.704301,
+    "ast_hash": "3e52b5e34fdb198fe01a5ece6f6e49ac",
+    "semantic_hash": "3e52b5e34fdb198fe01a5ece6f6e49ac"
+  },
+  "agritwin/data/yields.py": {
+    "mtime": 1795537644.2398088,
+    "seen": 1795540237.7045903,
+    "ast_hash": "d9dbdd6bbc2a9e613721d6e344ab97da",
+    "semantic_hash": "d9dbdd6bbc2a9e613721d6e344ab97da"
+  },
+  "agritwin/features/__init__.py": {
+    "mtime": 1795536353.330978,
+    "seen": 1795540237.7048745,
+    "ast_hash": "4f8d3615dca9bcabebb047e163b40305",
+    "semantic_hash": "4f8d3615dca9bcabebb047e163b40305"
+  },
+  "agritwin/models/__init__.py": {
+    "mtime": 1795536357.2287278,
+    "seen": 1795540237.7051692,
+    "ast_hash": "5ce58cb564bdc421d14e5da8e93a4175",
+    "semantic_hash": "5ce58cb564bdc421d14e5da8e93a4175"
+  },
+  "agritwin/simulator/__init__.py": {
+    "mtime": 1795536368.3385003,
+    "seen": 1795540237.70546,
+    "ast_hash": "df36f4ac25bd3bd988d1379be5d45015",
+    "semantic_hash": "df36f4ac25bd3bd988d1379be5d45015"
+  },
+  "alembic/env.py": {
+    "mtime": 1795538169.4001563,
+    "seen": 1795540237.7057557,
+    "ast_hash": "7e5a71defc57635b6ba802f34dd0a3d2",
+    "semantic_hash": "7e5a71defc57635b6ba802f34dd0a3d2"
+  },
+  "alembic/versions/90dcf677a8e1_initial_schema.py": {
+    "mtime": 1795538169.4033806,
+    "seen": 1795540237.706045,
+    "ast_hash": "d88d7c9119bd96b003a0fa649a7d7cc8",
+    "semantic_hash": "d88d7c9119bd96b003a0fa649a7d7cc8"
+  },
+  "config/crops/wheat.yaml": {
+    "mtime": 1795536311.2681365,
+    "seen": 1795540237.7063422,
+    "ast_hash": "8caef547bb48d70c0f4e12f45e2841cf",
+    "semantic_hash": "8caef547bb48d70c0f4e12f45e2841cf"
+  },
+  "config/settings.yaml": {
+    "mtime": 1795536318.5682673,
+    "seen": 1795540237.7066326,
+    "ast_hash": "b2fc45e0703f43e0f9447f11c180c56e",
+    "semantic_hash": "b2fc45e0703f43e0f9447f11c180c56e"
+  },
+  "data/fixtures/pilot_soil_profile.json": {
+    "mtime": 1795537644.2561197,
+    "seen": 1795540237.7069228,
+    "ast_hash": "35f24f6077ec3581f83f34c17fa11ede",
+    "semantic_hash": "35f24f6077ec3581f83f34c17fa11ede",
+    "ast_empty": true
+  },
+  "data/fixtures/satellite/ndvi_0528fde963a82e13eb1d54516af8530d.json": {
+    "mtime": 1795537644.2561197,
+    "seen": 1795540237.7069337,
+    "ast_hash": "ac92bf5e872432e4a56a60d2b5a77835",
+    "semantic_hash": "ac92bf5e872432e4a56a60d2b5a77835",
+    "ast_empty": true
+  },
+  "data/fixtures/soil/soil_4c3655d44bd1695fcfbb5c2e39c9fdda.json": {
+    "mtime": 1795537644.2561197,
+    "seen": 1795540237.7069402,
+    "ast_hash": "35f24f6077ec3581f83f34c17fa11ede",
+    "semantic_hash": "35f24f6077ec3581f83f34c17fa11ede",
+    "ast_empty": true
+  },
+  "data/fixtures/weather/hist_2fe456a0adba627cb76614774be66b75.json": {
+    "mtime": 1795537644.2561197,
+    "seen": 1795540237.706946,
+    "ast_hash": "5c87c15d23dd4e845f051aed4b474b01",
+    "semantic_hash": "5c87c15d23dd4e845f051aed4b474b01",
+    "ast_empty": true
+  },
+  "pyproject.toml": {
+    "mtime": 1795536283.2227533,
+    "seen": 1795540237.7069514,
+    "ast_hash": "6ceb11ce13430246456b303db07defd5",
+    "semantic_hash": "6ceb11ce13430246456b303db07defd5"
+  },
+  "tests/__init__.py": {
+    "mtime": 1795536416.100042,
+    "seen": 1795540237.7072375,
+    "ast_hash": "4b5c49bb2447613e21411a23b65e7aa6",
+    "semantic_hash": "4b5c49bb2447613e21411a23b65e7aa6"
+  },
+  "tests/test_config.py": {
+    "mtime": 1795536428.2837694,
+    "seen": 1795540237.7075202,
+    "ast_hash": "d890f41ccda5f1cafd5f0793114bdce6",
+    "semantic_hash": "d890f41ccda5f1cafd5f0793114bdce6"
+  },
+  "tests/test_data_pipeline.py": {
+    "mtime": 1795537644.2561197,
+    "seen": 1795540237.7078032,
+    "ast_hash": "49c7b66a80a83574951660f04ac97057",
+    "semantic_hash": "49c7b66a80a83574951660f04ac97057"
+  },
+  "tests/test_database.py": {
+    "mtime": 1795538169.410928,
+    "seen": 1795540237.70809,
+    "ast_hash": "efb98da9cf57bdb62a9db258e828c2b8",
+    "semantic_hash": "efb98da9cf57bdb62a9db258e828c2b8"
+  }
+}
