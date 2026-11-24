@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [0.2.0] - 2026-11-24
+
+### Phase 1: Multi-Source Data Pipeline & Punjab Dataset
+- Built Punjab wheat yield ground-truth dataset (`data/raw/punjab_wheat_yields_2013_2023.csv`) spanning 360 records across 36 districts and 10 seasons (2013-14 through 2022-23) based on Punjab Crop Reporting Service records.
+- Implemented `agritwin/data/yields.py` for schema validation, unit conversions, and district baseline calculation.
+- Implemented `agritwin/data/weather.py` with Open-Meteo API integration, 7-day forecast, disk caching, CC BY 4.0 attribution, and realistic Punjab climate fallback.
+- Implemented `agritwin/data/soil.py` querying ISRIC SoilGrids 2.0 REST API with Saxton-Rawls pedotransfer function estimating Field Capacity, Wilting Point, and Total Available Water (TAW).
+- Implemented `agritwin/data/satellite.py` for Sentinel-2 NDVI/EVI trajectory with double-logistic wheat phenology and GEE connector.
+- Implemented offline fixtures generator in `agritwin/data/fixtures.py`.
+- Authored package documentation in `agritwin/data/README.md`.
+- Added automated integration tests in `tests/test_data_pipeline.py` (13/13 passing, 100% pass rate).
+
+---
+
 ## [0.1.0] - 2026-11-24
 
 ### Phase 0: Project Scaffolding, Tooling & Verification Harness

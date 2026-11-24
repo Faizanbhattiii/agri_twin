@@ -126,13 +126,13 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Build reproducible data acquisition, caching, and preprocessing pipelines for Weather (Open-Meteo), Soil (SoilGrids), Satellite NDVI (Sentinel-2 via Google Earth Engine), and Punjab District Wheat Yields (Crop Reporting Service).
 
 #### Tasks:
-- [ ] 🤖 **P1.1**: Build Punjab Wheat Yield historical dataset (`data/raw/punjab_wheat_yields_2013_2023.csv`) covering Punjab wheat-producing districts (Faisalabad, Multan, Bahawalpur, Sargodha, Sahiwal, Rahim Yar Khan, Sheikhupura, Gujranwala, Khanewal, Kasur, Jhang, Toba Tek Singh, etc.) with acreage, production, and yield (kg/ha and maund/acre) sourced from Punjab Crop Reporting Service records.
-- [ ] 🤖 **P1.2**: Implement Open-Meteo weather pipeline (`agritwin/data/weather.py`) supporting historical weather (temperature min/max/mean, precipitation sum, solar radiation, relative humidity, wind speed) and 7-day forecast. Add persistent file/DB caching and rate limit handling complying with CC BY 4.0.
-- [ ] 🤖 **P1.3**: Implement SoilGrids REST API pipeline (`agritwin/data/soil.py`) extracting clay, sand, silt, soil organic carbon (SOC), pH, bulk density, and cation exchange capacity (CEC) for specified coordinates with local disk caching.
-- [ ] 🤖 **P1.4**: Implement Sentinel-2 NDVI pipeline (`agritwin/data/satellite.py`) connecting to Google Earth Engine with automated fallback to verified historical NDVI fixtures/composites when GEE credentials are not configured.
+- [x] 🤖 **P1.1**: Build Punjab Wheat Yield historical dataset (`data/raw/punjab_wheat_yields_2013_2023.csv`) covering Punjab wheat-producing districts (Faisalabad, Multan, Bahawalpur, Sargodha, Sahiwal, Rahim Yar Khan, Sheikhupura, Gujranwala, Khanewal, Kasur, Jhang, Toba Tek Singh, etc.) with acreage, production, and yield (kg/ha and maund/acre) sourced from Punjab Crop Reporting Service records.
+- [x] 🤖 **P1.2**: Implement Open-Meteo weather pipeline (`agritwin/data/weather.py`) supporting historical weather (temperature min/max/mean, precipitation sum, solar radiation, relative humidity, wind speed) and 7-day forecast. Add persistent file/DB caching and rate limit handling complying with CC BY 4.0.
+- [x] 🤖 **P1.3**: Implement SoilGrids REST API pipeline (`agritwin/data/soil.py`) extracting clay, sand, silt, soil organic carbon (SOC), pH, bulk density, and cation exchange capacity (CEC) for specified coordinates with local disk caching.
+- [x] 🤖 **P1.4**: Implement Sentinel-2 NDVI pipeline (`agritwin/data/satellite.py`) connecting to Google Earth Engine with automated fallback to verified historical NDVI fixtures/composites when GEE credentials are not configured.
 - [ ] 🧑 **P1.5** *(HUMAN)*: Optionally register Google Cloud project for Google Earth Engine (free non-commercial) and set `GEE_SERVICE_ACCOUNT` / `GEE_KEY_FILE` in `.env`. (If skipped, agent pipeline uses verified satellite fixtures).
-- [ ] 🤖 **P1.6**: Implement synthetic/fixture generator for offline development ensuring `source='simulated'` flag is populated.
-- [ ] 🤖 **P1.7**: Write unit and integration tests (`tests/test_data_pipeline.py`) verifying pipeline data extraction, schema validation, and cache hits.
+- [x] 🤖 **P1.6**: Implement synthetic/fixture generator for offline development ensuring `source='simulated'` flag is populated.
+- [x] 🤖 **P1.7**: Write unit and integration tests (`tests/test_data_pipeline.py`) verifying pipeline data extraction, schema validation, and cache hits.
 
 #### Definition of Done (Phase 1):
 1. All pipelines (Weather, SoilGrids, Satellite NDVI, District Yields) execute reliably and cache outputs.
