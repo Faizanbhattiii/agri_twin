@@ -147,7 +147,7 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Implement relational schema (PostgreSQL with SQLite test compatibility) via SQLAlchemy 2.0 and Alembic, with seed geometries for Punjab districts and pilot research field.
 
 #### Tasks:
-- [ ] 🤖 **P2.1**: Design SQLAlchemy 2.0 ORM models (`agritwin/core/models.py`):
+- [x] 🤖 **P2.1**: Design SQLAlchemy 2.0 ORM models (`agritwin/core/models.py`):
   - `District` (name, division, geometry GeoJSON, centroid lat/lon, soil profile)
   - `Field` (name, district_id, boundary GeoJSON, area_acres, crop_type, sowing_date, is_pilot)
   - `WeatherObservation` & `WeatherForecast` (timestamp, temp, humidity, rain, solar radiation, et0)
@@ -156,12 +156,12 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
   - `SensorTelemetry` (timestamp, field_id, soil_moisture_pct, air_temp_c, relative_humidity_pct, soil_temp_c, battery_v, source)
   - `IrrigationAdvisory` (timestamp, field_id, urgency, recommended_depth_mm, tubewell_hours, reason_en, reason_ur)
   - `YieldForecast` (field_id / district_id, season, model_name, predicted_yield_kgha, predicted_yield_maund_acre, lower_bound, upper_bound)
-- [ ] 🤖 **P2.2**: Configure Alembic migration environment (`alembic/`) supporting dynamic database URL (PostgreSQL default, SQLite fallback for unit testing).
-- [ ] 🤖 **P2.3**: Generate initial database migration script.
-- [ ] 🤖 **P2.4**: Create database seeder script (`agritwin/core/seed.py`):
+- [x] 🤖 **P2.2**: Configure Alembic migration environment (`alembic/`) supporting dynamic database URL (PostgreSQL default, SQLite fallback for unit testing).
+- [x] 🤖 **P2.3**: Generate initial database migration script.
+- [x] 🤖 **P2.4**: Create database seeder script (`agritwin/core/seed.py`):
   - Seed all Punjab wheat districts with coordinates and representative soil characteristics.
   - Seed Pilot Research Field (e.g. Faisalabad Agricultural Research Farm, 5 acres polygon).
-- [ ] 🤖 **P2.5**: Write database tests (`tests/test_database.py`) validating model creation, cascade deletes, GeoJSON serialization, and query efficiency.
+- [x] 🤖 **P2.5**: Write database tests (`tests/test_database.py`) validating model creation, cascade deletes, GeoJSON serialization, and query efficiency.
 
 #### Definition of Done (Phase 2):
 1. Migrations run cleanly from scratch (`alembic upgrade head`).
