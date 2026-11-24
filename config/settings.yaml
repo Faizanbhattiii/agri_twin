@@ -1,0 +1,32 @@
+app:
+  name: "AgriTwin Pakistan"
+  version: "0.1.0"
+  description: "Hybrid Digital Twin of Pakistani Farmland for Wheat Monitoring & Yield Forecasting"
+  author: "CS-F26-15 Bahria University Islamabad"
+  timezone: "Asia/Karachi"
+
+cadence:
+  telemetry_interval_minutes: 15
+  weather_forecast_hours: 6
+  weather_history_refresh_days: 1
+  ndvi_revisit_days: 5
+
+pilot_field:
+  id: "pilot-faisalabad-01"
+  name: "Faisalabad Wheat Pilot Plot"
+  name_ur: "فیصل آباد گندم ریسرچ پلاٹ"
+  district: "Faisalabad"
+  division: "Faisalabad"
+  province: "Punjab"
+  country: "Pakistan"
+  latitude: 31.4289
+  longitude: 73.0782
+  area_acres: 5.0
+  area_ha: 2.0234
+  soil_type: "Loam"
+
+attribution:
+  weather: "Open-Meteo Weather API (CC BY 4.0, non-commercial)"
+  satellite: "Copernicus Sentinel-2 / Google Earth Engine"
+  soil: "ISRIC SoilGrids 250m v2.0"
+  yield_records: "Punjab Crop Reporting Service (CRS)"

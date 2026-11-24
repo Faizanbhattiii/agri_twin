@@ -1,0 +1,102 @@
+crop:
+  name: "Wheat"
+  local_name_ur: "گندم"
+  botanical_name: "Triticum aestivum"
+  season: "Rabi"
+  primary_region: "Punjab, Pakistan"
+
+calendar:
+  season_start_month: 11
+  season_start_day: 1
+  season_end_month: 5
+  season_end_day: 10
+  total_weeks: 27
+  base_temperature_c: 5.0
+
+growth_stages:
+  - id: germination
+    name: "Germination & Emergence"
+    name_ur: "اگاؤ اور شروعات"
+    day_start: 1
+    day_end: 15
+    gdd_min: 0
+    gdd_max: 150
+    kc: 0.35
+    critical_irrigation: false
+
+  - id: tillering_cri
+    name: "Crown Root Initiation (CRI) & Tillering"
+    name_ur: "شاخیں نکلنا اور جڑوں کی بنیاد"
+    day_start: 16
+    day_end: 45
+    gdd_min: 151
+    gdd_max: 450
+    kc: 0.70
+    critical_irrigation: true
+    irrigation_note: "First critical irrigation at 20-25 days after sowing (CRI stage)"
+    irrigation_note_ur: "پہلا لازمی پانی بوائی کے 20 سے 25 دن بعد (تاج جڑوں کی شروعات پر)"
+
+  - id: jointing
+    name: "Stem Elongation / Jointing"
+    name_ur: "تنے کا پھیلاؤ / گانٹھیں بننا"
+    day_start: 46
+    day_end: 75
+    gdd_min: 451
+    gdd_max: 800
+    kc: 0.95
+    critical_irrigation: false
+
+  - id: heading_flowering
+    name: "Booting, Heading & Anthesis"
+    name_ur: "سٹہ نکلنا اور پھول آنا"
+    day_start: 76
+    day_end: 105
+    gdd_min: 801
+    gdd_max: 1150
+    kc: 1.15
+    critical_irrigation: true
+    irrigation_note: "Second critical irrigation at heading/flowering stage (80-90 days)"
+    irrigation_note_ur: "دوسرا لازمی پانی سٹہ اور پھول آنے کے وقت (80 تا 90 دن)"
+
+  - id: grain_filling
+    name: "Grain Filling (Milk & Dough)"
+    name_ur: "دانہ بھرائی (دودھیا اور سخت دانہ)"
+    day_start: 106
+    day_end: 140
+    gdd_min: 1151
+    gdd_max: 1550
+    kc: 0.85
+    critical_irrigation: true
+    irrigation_note: "Third critical irrigation at grain milky stage (110-120 days)"
+    irrigation_note_ur: "تیسرا پانی دانے کی دودھیا حالت میں (110 تا 120 دن)"
+
+  - id: maturity
+    name: "Maturity & Ripening"
+    name_ur: "پکاو اور کٹائی"
+    day_start: 141
+    day_end: 160
+    gdd_min: 1551
+    gdd_max: 1800
+    kc: 0.40
+    critical_irrigation: false
+    irrigation_note: "Stop all irrigation 15 days before harvesting"
+    irrigation_note_ur: "کٹائی سے 15 دن قبل ہر قسم کی آبپاشی بند کر دیں"
+
+soil_water_parameters:
+  depletion_factor_p: 0.55
+  default_field_capacity_pct: 30.0
+  default_wilting_point_pct: 12.0
+  effective_root_depth_max_m: 1.2
+  critical_moisture_threshold_pct: 18.0
+
+risk_thresholds:
+  heat_stress_temp_c: 32.0
+  heat_stress_critical_stage: "grain_filling"
+  rust_risk_temp_min_c: 15.0
+  rust_risk_temp_max_c: 25.0
+  rust_risk_humidity_min_pct: 75.0
+
+units_and_conversions:
+  maund_kg: 40.0
+  acre_ha: 0.404686
+  maund_per_acre_to_kg_per_ha: 98.8418
