@@ -12,8 +12,8 @@ Whenever an agent hits a human task (`🧑`), the automated workflow falls back 
 | **Phase 0** | H-00 | Supervisor framing alignment (Hardware + Software, honest benchmark) | ⏳ Pending human check | Recommended |
 | **Phase 1** | H-01 (P1.5) | Register Google Earth Engine (GEE) non-commercial project | ⚪ Optional (Mock fallback active) | Optional |
 | **Phase 2** | H-02 | (Optional) Configure PostgreSQL database instance | ⚪ Optional (SQLite active) | Optional |
-| **Phase 3** | H-03 (P3.3) | Physical ESP32 sensor node wiring and assembly | ⏳ Pending hardware build | Recommended (Simulator active) |
-| **Phase 3** | H-04 | Flash firmware to ESP32 with Wi-Fi credentials | ⏳ Pending hardware build | Recommended (Simulator active) |
+| **Phase 3** | H-03 (P3.3) | Physical ESP32 sensor node wiring and assembly (irmware/README.md ready) | ⏳ Ready for hardware build | Recommended (Simulator active) |
+| **Phase 3** | H-04 | Flash firmware to ESP32 (irmware/src/config.h.example ready) | ⏳ Ready for hardware build | Recommended (Simulator active) |
 | **Phase 4** | H-05 | Review model benchmark report (`docs/MODEL_BENCHMARK.md`) with supervisor | ⏳ Pending Phase 4 | Recommended |
 | **Phase 5** | H-06 | Review irrigation recommendations against local farming practices | ⏳ Pending Phase 5 | Recommended |
 | **Phase 6** | H-07 | Validate climate stress simulation scenarios | ⏳ Pending Phase 6 | Recommended |

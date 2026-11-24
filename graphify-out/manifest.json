@@ -182,5 +182,107 @@
     "seen": 1795540237.70809,
     "ast_hash": "efb98da9cf57bdb62a9db258e828c2b8",
     "semantic_hash": "efb98da9cf57bdb62a9db258e828c2b8"
+  },
+  "agritwin/api/app.py": {
+    "mtime": 1795548368.3734443,
+    "seen": 1795548514.0025704,
+    "ast_hash": "b709dfb770d2a1a357e625efffc1df47",
+    "semantic_hash": ""
+  },
+  "agritwin/api/schemas.py": {
+    "mtime": 1795548311.2522836,
+    "seen": 1795548514.002573,
+    "ast_hash": "c85f46236e4f55175732f8b46334043b",
+    "semantic_hash": ""
+  },
+  "agritwin/api/telemetry.py": {
+    "mtime": 1795548349.087222,
+    "seen": 1795548514.0025752,
+    "ast_hash": "60eda3b1506efbc13609c3d65f039c2e",
+    "semantic_hash": ""
+  },
+  "agritwin/api/websocket.py": {
+    "mtime": 1795548335.3483398,
+    "seen": 1795548514.0025768,
+    "ast_hash": "809c19fd8fcbcde601926799eec5553d",
+    "semantic_hash": ""
+  },
+  "firmware/src/main.cpp": {
+    "mtime": 1795548270.0124614,
+    "seen": 1795548514.002625,
+    "ast_hash": "bfa74829267a2c6d39cae25498af3128",
+    "semantic_hash": ""
+  },
+  "simulator/esp32_simulator.py": {
+    "mtime": 1795548389.8131123,
+    "seen": 1795548514.0026288,
+    "ast_hash": "ed406f7453b7a893ecca725d39dcf348",
+    "semantic_hash": ""
+  },
+  "tests/test_telemetry.py": {
+    "mtime": 1795548413.6338933,
+    "seen": 1795548514.0026388,
+    "ast_hash": "970abc75d9e5cb746531c702e448022d",
+    "semantic_hash": ""
+  },
+  ".agents/rules/agritwin.md": {
+    "mtime": 1795536227.808729,
+    "seen": 1795548514.0026405,
+    "ast_hash": "998372f22a23165ca5b6f818be571a37",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1795536220.4403727,
+    "seen": 1795548514.0026422,
+    "ast_hash": "48b161d5ba52ff0c559b8b187e45842c",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1795548502.315005,
+    "seen": 1795548514.0026438,
+    "ast_hash": "ceb16f54c1da123b2073bbfd0f468b11",
+    "semantic_hash": ""
+  },
+  "HUMAN_TASKS.md": {
+    "mtime": 1795548490.5721745,
+    "seen": 1795548514.0026453,
+    "ast_hash": "98c6f1b2e6c7475874c3f4b77a5160ed",
+    "semantic_hash": ""
+  },
+  "agritwin/api/README.md": {
+    "mtime": 1795548398.1570394,
+    "seen": 1795548514.0026467,
+    "ast_hash": "e9e14daf2f6c54c11878747182a8f102",
+    "semantic_hash": ""
+  },
+  "agritwin/data/README.md": {
+    "mtime": 1795537644.2398088,
+    "seen": 1795548514.0026484,
+    "ast_hash": "f235cf8f862d399e8f932f99ba6e9ec1",
+    "semantic_hash": ""
+  },
+  "docs/DECISIONS.md": {
+    "mtime": 1795536249.2658358,
+    "seen": 1795548514.0026515,
+    "ast_hash": "6d348f3a3e9afea183d7e2af18e249dd",
+    "semantic_hash": ""
+  },
+  "docs/IMPLEMENTATION_PLAN.md": {
+    "mtime": 1795548449.4768798,
+    "seen": 1795548514.0026526,
+    "ast_hash": "002ba7090590e107aa460e64c053532a",
+    "semantic_hash": ""
+  },
+  "firmware/README.md": {
+    "mtime": 1795548287.98227,
+    "seen": 1795548514.0026543,
+    "ast_hash": "01b2b9a5a0933fa3a2bee466dcbd430c",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1795536275.1235795,
+    "seen": 1795548514.002656,
+    "ast_hash": "cc0f74f9210e54b86082bfb33336a1b2",
+    "semantic_hash": ""
   }
 }

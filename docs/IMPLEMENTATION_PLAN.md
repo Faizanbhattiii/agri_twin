@@ -176,7 +176,7 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Deliver ESP32 microcontroller firmware, hardware wiring guide, realistic software telemetry simulator, and FastAPI ingestion endpoint with real-time WebSocket broadcasting.
 
 #### Tasks:
-- [ ] 🤖 **P3.1**: Create ESP32 firmware source code (`firmware/src/main.cpp` and `firmware/platformio.ini`):
+- [x] 🤖 **P3.1**: Create ESP32 firmware source code (`firmware/src/main.cpp` and `firmware/platformio.ini`):
   - Capacitive Soil Moisture Sensor v1.2 reading on ADC1 (with two-point calibration: dry air vs wet soil)
   - DHT22 temperature and relative humidity sensor reading
   - DS18B20 OneWire soil temperature reading (optional probe)
@@ -184,15 +184,15 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
   - HTTPS POST JSON payload dispatcher to backend `/api/v1/telemetry`
   - Deep-sleep cycle management (15-minute wake interval)
   - Flash SPIFFS offline ring buffer to queue up to 200 readings when disconnected
-- [ ] 🤖 **P3.2**: Write comprehensive hardware documentation (`firmware/README.md`) detailing schematics, bill of materials (BOM), breadboard pinout table, voltage divider considerations, and field waterproofing tips.
+- [x] 🤖 **P3.2**: Write comprehensive hardware documentation (`firmware/README.md`) detailing schematics, bill of materials (BOM), breadboard pinout table, voltage divider considerations, and field waterproofing tips.
 - [ ] 🧑 **P3.3** *(HUMAN)*: Physical hardware assembly (ESP32 DevKit, capacitive sensor, DHT22, power supply) following `firmware/README.md` (or use simulator).
-- [ ] 🤖 **P3.4**: Build standalone Python ESP32 software simulator (`simulator/esp32_simulator.py`):
+- [x] 🤖 **P3.4**: Build standalone Python ESP32 software simulator (`simulator/esp32_simulator.py`):
   - Simulates diurnal temperature cycles, relative humidity variations, and soil drying curve punctuated by irrigation events
   - Marks all readings with `source='simulated'`
   - CLI options for burst mode, continuous 15-min interval streaming, and simulated sensor fault injection
-- [ ] 🤖 **P3.5**: Implement FastAPI telemetry ingestion endpoint (`POST /api/v1/telemetry`) with Pydantic validation, anomaly detection (out-of-range sensor values), and persistence.
-- [ ] 🤖 **P3.6**: Implement real-time WebSocket broadcaster (`/ws/telemetry`) pushing new readings to connected dashboard clients.
-- [ ] 🤖 **P3.7**: Write integration tests (`tests/test_telemetry.py`) testing ingestion, validation, buffer playback, and WebSocket broadcast.
+- [x] 🤖 **P3.5**: Implement FastAPI telemetry ingestion endpoint (`POST /api/v1/telemetry`) with Pydantic validation, anomaly detection (out-of-range sensor values), and persistence.
+- [x] 🤖 **P3.6**: Implement real-time WebSocket broadcaster (`/ws/telemetry`) pushing new readings to connected dashboard clients.
+- [x] 🤖 **P3.7**: Write integration tests (`tests/test_telemetry.py`) testing ingestion, validation, buffer playback, and WebSocket broadcast.
 
 #### Definition of Done (Phase 3):
 1. Firmware compiles cleanly under PlatformIO.

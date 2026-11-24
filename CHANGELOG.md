@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [0.4.0] - 2026-11-24
+
+### Phase 3: Field Node Firmware, Simulator & Telemetry Ingestion
+- Authored ESP32 PlatformIO firmware in `firmware/src/main.cpp`, `firmware/platformio.ini`, and `firmware/src/config.h.example` featuring ADC1 two-point capacitive soil moisture calibration, DHT22 + optional DS18B20 sensing, Wi-Fi exponential backoff, SPIFFS 200-entry offline ring buffer, and 15-minute deep-sleep cycle.
+- Authored comprehensive hardware wiring guide, BOM, and calibration instructions in `firmware/README.md`.
+- Implemented standalone Python ESP32 software simulator in `simulator/esp32_simulator.py` with diurnal Punjab climate curves, irrigation drying cycles, fault injection, and `source='simulated'` tagging.
+- Implemented Pydantic v2 validation schemas (`agritwin/api/schemas.py`), real-time WebSocket broadcaster (`agritwin/api/websocket.py`), FastAPI telemetry endpoints (`agritwin/api/telemetry.py`), and main FastAPI app (`agritwin/api/app.py`).
+- Added API package documentation in `agritwin/api/README.md`.
+- Updated `HUMAN_TASKS.md` for Phase 3 hardware assembly and flashing readiness.
+- Authored integration test suite `tests/test_telemetry.py` (24/24 tests passing across project).
+
+---
+
 ## [0.3.0] - 2026-11-24
 
 ### Phase 2: Relational Data Model, Migrations & Seed Geometry

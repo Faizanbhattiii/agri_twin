@@ -1,0 +1,28 @@
+#pragma once
+
+// Copy this file to config.h and fill in your local network & server settings.
+// config.h is git-ignored so credentials are never committed.
+
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+
+// AgriTwin FastAPI Backend Endpoint
+#define SERVER_URL "http://192.168.1.100:8000/api/v1/telemetry"
+#define FIELD_ID "pilot-faisalabad-01"
+#define NODE_API_KEY "dev-node-api-key-test-12345"
+
+// GPIO Pin Definitions (ADC1 pins only for analog sensors when Wi-Fi is active)
+#define SOIL_MOISTURE_PIN 34   // Capacitive Soil Moisture Sensor v1.2 (ADC1_CH6)
+#define BATTERY_ADC_PIN 35     // Li-Ion Voltage Divider (ADC1_CH7)
+#define DHT_PIN 4              // DHT22 Data Pin
+#define DHT_TYPE DHT22
+#define DS18B20_PIN 16         // Optional DS18B20 Soil Temp Probe
+
+// Two-point Calibration for Capacitive Soil Moisture Sensor v1.2 (12-bit ADC: 0..4095)
+// Measure DRY_VALUE in open dry air, WET_VALUE submerged in water
+#define SOIL_DRY_ADC 3200
+#define SOIL_WET_ADC 1450
+
+// Telemetry & Power Management
+#define SLEEP_DURATION_SEC 900  // 15 minutes (900 seconds)
+#define MAX_OFFLINE_QUEUE 200   // Max buffered JSON lines in SPIFFS
