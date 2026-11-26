@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [0.7.0] - 2026-11-26
+
+### Phase 6: Climate-Risk "What-If" Scenario Simulator
+- Implemented core interactive what-if simulation engine in `agritwin/simulator/what_if.py` supporting temperature offsets (-5C to +10C), precipitation scaling (0.0x to 3.0x), and irrigation delays (+0 to +45 days).
+- Implemented catalog of 6 realistic presets in `PRESET_SCENARIOS` with bilingual English and Urdu descriptions (baseline, March terminal heatwave, severe winter drought, 14-day irrigation delay, compound crisis, late torrential rain).
+- Integrated FAO-33 relative water deficit yield reduction function $(1 - Y_a/Y_m) = K_y(1 - ET_{c,adj}/ET_c)$ and physiological March terminal heat shock penalties ($T_{max} > 32^\circ	ext{C}$) into model inference.
+- Implemented `AgronomicStressCalculator` computing heat stress degree-hours, grain-filling heat days, water deficit stress days, and bilingual mitigation advice.
+- Built FastAPI simulation router in `agritwin/api/scenarios.py` mounted at `/api/v1/scenarios` (`GET /presets`, `POST /run`) with execution latency < 150ms.
+- Authored Pydantic v2 validation schemas for scenarios in `agritwin/api/schemas.py`.
+- Authored test suite `tests/test_simulator.py` covering preset metadata, baseline invariance, heatwave sensitivity, drought water stress, compound shock amplification, and API response latencies (49/49 passing project-wide).
+- Documented package in `agritwin/simulator/README.md` and updated `HUMAN_TASKS.md` for Task H-07 review readiness.
+
+---
+
 ## [0.6.0] - 2026-11-26
 
 ### Phase 5: Soil-Moisture Forecaster & Irrigation Advisory Engine

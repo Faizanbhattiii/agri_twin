@@ -272,17 +272,17 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Deliver an interactive simulation engine allowing farmers and agronomists to model climate shocks (heatwaves, drought, excessive rain, delayed irrigation) and observe projected impacts on crop yield and soil moisture.
 
 #### Tasks:
-- [ ] 🤖 **P6.1**: Implement scenario generator (`agritwin/simulator/what_if.py`):
+- [x] 🤖 **P6.1**: Implement scenario generator (`agritwin/simulator/what_if.py`):
   - Heatwave perturbation (+1°C to +5°C temperature offset, particularly during March terminal grain-filling stage)
   - Precipitation anomaly (-100% to +150% rainfall modification simulating drought vs heavy rain)
   - Irrigation delay perturbation (shifting scheduled irrigations by +7, +14, +21 days)
   - Compound scenario combinations
-- [ ] 🤖 **P6.2**: Link perturbation engine to feature transformer and DeepAgroNet / baseline models to compute relative yield impact ($\Delta Yield\%$).
-- [ ] 🤖 **P6.3**: Implement agronomic stress index calculators:
+- [x] 🤖 **P6.2**: Link perturbation engine to feature transformer and DeepAgroNet / baseline models to compute relative yield impact ($\Delta Yield\%$).
+- [x] 🤖 **P6.3**: Implement agronomic stress index calculators:
   - Heat Stress Index (accumulated hours with $T > 32^\circ C$ during flowering/anthesis)
   - Water Deficit Stress Days (consecutive days below $RAW$)
-- [ ] 🤖 **P6.4**: Build FastAPI simulation endpoints (`POST /api/v1/scenarios/run` and `GET /api/v1/scenarios/presets`).
-- [ ] 🤖 **P6.5**: Add unit and sensitivity tests (`tests/test_simulator.py`) confirming monotonic response to severe stressors (e.g., severe heatwave causes predicted yield drop).
+- [x] 🤖 **P6.4**: Build FastAPI simulation endpoints (`POST /api/v1/scenarios/run` and `GET /api/v1/scenarios/presets`).
+- [x] 🤖 **P6.5**: Add unit and sensitivity tests (`tests/test_simulator.py`) confirming monotonic response to severe stressors (e.g., severe heatwave causes predicted yield drop).
 
 #### Definition of Done (Phase 6):
 1. What-If engine runs scenarios in < 1 second.

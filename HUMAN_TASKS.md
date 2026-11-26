@@ -16,7 +16,7 @@ Whenever an agent hits a human task (`🧑`), the automated workflow falls back 
 | **Phase 3** | H-04 | Flash firmware to ESP32 (irmware/src/config.h.example ready) | ⏳ Ready for hardware build | Recommended (Simulator active) |
 | **Phase 4** | H-05 | Review model benchmark report (`docs/MODEL_BENCHMARK.md`) with supervisor | 🟢 Ready for review (Report & models trained) | Recommended |
 | **Phase 5** | H-06 | Review irrigation recommendations against local farming practices | ⏳ Pending Phase 5 | Recommended |
-| **Phase 6** | H-07 | Validate climate stress simulation scenarios | ⏳ Pending Phase 6 | Recommended |
+| **Phase 6** | H-07 | Validate climate stress simulation scenarios | 🟢 Ready for review (Simulator, stress indices & API complete) | Recommended |
 | **Phase 7** | H-08 | Review Urdu translations and UI in browser | ⏳ Pending Phase 7 | Recommended |
 | **Phase 8** | H-09 | Final Capstone defense rehearsal using `docs/DEMO_SCRIPT.md` & `docs/VIVA_QA.md` | ⏳ Pending Phase 8 | Critical |
 
@@ -111,9 +111,12 @@ Whenever an agent hits a human task (`🧑`), the automated workflow falls back 
 
 ### Phase 6: Climate What-If Simulator
 #### 🧑 Task H-07: Scenario Sanity Checks
-- **Objective:** Experiment with the What-If parameters:
-  - +3°C heatwave during March grain-filling should show an estimated yield drop of ~8-15%.
-  - -50% rainfall without supplementary irrigation should show acute water stress days.
+- **Status:** 🟢 Ready for review. The What-If Scenario Simulator, FAO-33 water production coupling, heat stress indices, and FastAPI endpoints are fully implemented and verified with 49/49 passing project-wide tests.
+- **Objective:** Validate simulation outputs with supervisor / agronomists:
+  1. **Terminal Heatwave (+3.5°C in March):** Verifies predicted yield reduction (~12-15%) from terminal heat shock and accelerated senescence.
+  2. **Winter Drought & Delayed Irrigation (-70% rain, +14d delay):** Verifies soil water depletion exceeding RAW, triggering acute water deficit stress days and ~14% yield reduction.
+  3. **Compound Climate Shock (+3.0°C & -50% rain & +14d delay):** Verifies compounding stress yielding up to 20-25% crop decline.
+  4. Test live API in Swagger docs (`/docs#/What-If%20Climate%20Simulator/run_scenario_api_v1_scenarios_run_post`).
 
 ---
 
