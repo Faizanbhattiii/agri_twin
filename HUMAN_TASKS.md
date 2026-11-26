@@ -17,7 +17,7 @@ Whenever an agent hits a human task (`🧑`), the automated workflow falls back 
 | **Phase 4** | H-05 | Review model benchmark report (`docs/MODEL_BENCHMARK.md`) with supervisor | 🟢 Ready for review (Report & models trained) | Recommended |
 | **Phase 5** | H-06 | Review irrigation recommendations against local farming practices | ⏳ Pending Phase 5 | Recommended |
 | **Phase 6** | H-07 | Validate climate stress simulation scenarios | 🟢 Ready for review (Simulator, stress indices & API complete) | Recommended |
-| **Phase 7** | H-08 | Review Urdu translations and UI in browser | ⏳ Pending Phase 7 | Recommended |
+| **Phase 7** | H-08 | Review Urdu translations and UI in browser | 🟢 Ready for review (Frontend built & served) | Recommended |
 | **Phase 8** | H-09 | Final Capstone defense rehearsal using `docs/DEMO_SCRIPT.md` & `docs/VIVA_QA.md` | ⏳ Pending Phase 8 | Critical |
 
 ---
