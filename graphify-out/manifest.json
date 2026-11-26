@@ -96,10 +96,10 @@
     "semantic_hash": "969e9fa01dd31f536334ae5b489f2f24"
   },
   "agritwin/simulator/__init__.py": {
-    "mtime": 1795720614.512015,
-    "seen": 1795721820.3837335,
-    "ast_hash": "29f45a1b7c7a62e2c4b488cc9e113fa1",
-    "semantic_hash": "29f45a1b7c7a62e2c4b488cc9e113fa1"
+    "mtime": 1795721842.4229774,
+    "seen": 1795722878.762965,
+    "ast_hash": "29b08b1abce8697f61b40afa5f36a321",
+    "semantic_hash": "29b08b1abce8697f61b40afa5f36a321"
   },
   "alembic/env.py": {
     "mtime": 1795538169.4001563,
@@ -184,16 +184,16 @@
     "semantic_hash": "efb98da9cf57bdb62a9db258e828c2b8"
   },
   "agritwin/api/app.py": {
-    "mtime": 1795720640.8368206,
-    "seen": 1795721820.379668,
-    "ast_hash": "10e1ac979e219aebf4c063f897b4c003",
-    "semantic_hash": "10e1ac979e219aebf4c063f897b4c003"
+    "mtime": 1795722573.0584824,
+    "seen": 1795722878.7486725,
+    "ast_hash": "851b38d36bda73f7c6d174b7ade293e8",
+    "semantic_hash": "851b38d36bda73f7c6d174b7ade293e8"
   },
   "agritwin/api/schemas.py": {
-    "mtime": 1795720640.3865287,
-    "seen": 1795721820.380113,
-    "ast_hash": "05f25d4e21d35acea94de48a0199d167",
-    "semantic_hash": "05f25d4e21d35acea94de48a0199d167"
+    "mtime": 1795721842.4214528,
+    "seen": 1795722878.7494047,
+    "ast_hash": "8d6af0ae54152138169afd939751c768",
+    "semantic_hash": "8d6af0ae54152138169afd939751c768"
   },
   "agritwin/api/telemetry.py": {
     "mtime": 1795548530.3668067,
@@ -384,21 +384,149 @@
     "semantic_hash": "98801663c3b815c4d13092c3a21ef2a6"
   },
   "agritwin/api/scenarios.py": {
-    "mtime": 1795720640.6534808,
-    "seen": 1795721820.380098,
-    "ast_hash": "c2eb694291a649b873bae4fafb798c17",
-    "semantic_hash": "c2eb694291a649b873bae4fafb798c17"
+    "mtime": 1795721842.419978,
+    "seen": 1795722878.7490938,
+    "ast_hash": "d31034622d41ffa6ea063435ec821288",
+    "semantic_hash": "d31034622d41ffa6ea063435ec821288"
   },
   "agritwin/simulator/what_if.py": {
-    "mtime": 1795721708.973947,
-    "seen": 1795721820.383736,
-    "ast_hash": "76f4e30cba80e49f44b08ca6cd6df216",
-    "semantic_hash": "76f4e30cba80e49f44b08ca6cd6df216"
+    "mtime": 1795721842.4229774,
+    "seen": 1795722878.763176,
+    "ast_hash": "19d563a9be219ce70eac16c55778978c",
+    "semantic_hash": "19d563a9be219ce70eac16c55778978c"
   },
   "tests/test_simulator.py": {
-    "mtime": 1795720664.907052,
-    "seen": 1795721820.3869522,
-    "ast_hash": "92283f1cad482e5863972ecdf52c850c",
-    "semantic_hash": "92283f1cad482e5863972ecdf52c850c"
+    "mtime": 1795721842.4350305,
+    "seen": 1795722878.7814043,
+    "ast_hash": "aef3d8eb28092c10d77e037d55af05ca",
+    "semantic_hash": "aef3d8eb28092c10d77e037d55af05ca"
+  },
+  "agritwin/api/dashboard.py": {
+    "mtime": 1795722675.4448597,
+    "seen": 1795722878.7488854,
+    "ast_hash": "856f5e67bdcaf395ce010b23a6522c91",
+    "semantic_hash": "856f5e67bdcaf395ce010b23a6522c91"
+  },
+  "frontend/package.json": {
+    "mtime": 1795722087.832594,
+    "seen": 1795722878.7677388,
+    "ast_hash": "03af4ab07c7d9f83bb082d315f117a6e",
+    "semantic_hash": "03af4ab07c7d9f83bb082d315f117a6e"
+  },
+  "frontend/postcss.config.js": {
+    "mtime": 1795722262.6250134,
+    "seen": 1795722878.7697933,
+    "ast_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0",
+    "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
+  },
+  "frontend/src/App.tsx": {
+    "mtime": 1795722521.0954287,
+    "seen": 1795722878.7702308,
+    "ast_hash": "263c8bdfe5a489f80edd62be6e5b55bf",
+    "semantic_hash": "263c8bdfe5a489f80edd62be6e5b55bf"
+  },
+  "frontend/src/components/Advisories/IrrigationCard.tsx": {
+    "mtime": 1795722416.510777,
+    "seen": 1795722878.7706144,
+    "ast_hash": "12864d89244ca97f60bd7aa7bb8a36d5",
+    "semantic_hash": "12864d89244ca97f60bd7aa7bb8a36d5"
+  },
+  "frontend/src/components/Charts/CropHealthCharts.tsx": {
+    "mtime": 1795722438.6834168,
+    "seen": 1795722878.77153,
+    "ast_hash": "223bcf86983decbc82ea4e9b58732764",
+    "semantic_hash": "223bcf86983decbc82ea4e9b58732764"
+  },
+  "frontend/src/components/Footer/Footer.tsx": {
+    "mtime": 1795722330.7759695,
+    "seen": 1795722878.7722065,
+    "ast_hash": "6df5bc82a4758a4aa01fa2f292b98c24",
+    "semantic_hash": "6df5bc82a4758a4aa01fa2f292b98c24"
+  },
+  "frontend/src/components/Header/Navbar.tsx": {
+    "mtime": 1795722330.5059202,
+    "seen": 1795722878.7727013,
+    "ast_hash": "61123d2305c978412964cd27e3aa4ad3",
+    "semantic_hash": "61123d2305c978412964cd27e3aa4ad3"
+  },
+  "frontend/src/components/Map/DigitalTwinMap.tsx": {
+    "mtime": 1795722392.9719958,
+    "seen": 1795722878.7732031,
+    "ast_hash": "255b19afa64d9932f5ad7c5b3c08deaa",
+    "semantic_hash": "255b19afa64d9932f5ad7c5b3c08deaa"
+  },
+  "frontend/src/components/Simulator/WhatIfPlayground.tsx": {
+    "mtime": 1795722503.638234,
+    "seen": 1795722878.7737048,
+    "ast_hash": "2fa79fbe52a74b3987ca0733e19071f0",
+    "semantic_hash": "2fa79fbe52a74b3987ca0733e19071f0"
+  },
+  "frontend/src/components/Telemetry/TelemetryGauges.tsx": {
+    "mtime": 1795722355.4772534,
+    "seen": 1795722878.7740922,
+    "ast_hash": "cd70ee86fd893fac27505c74fac31d30",
+    "semantic_hash": "cd70ee86fd893fac27505c74fac31d30"
+  },
+  "frontend/src/i18n/en.json": {
+    "mtime": 1795722297.925327,
+    "seen": 1795722878.7744586,
+    "ast_hash": "ef9e9d013627ad623cf435d465cc0a1e",
+    "semantic_hash": "ef9e9d013627ad623cf435d465cc0a1e",
+    "ast_empty": true
+  },
+  "frontend/src/i18n/index.ts": {
+    "mtime": 1795722298.945495,
+    "seen": 1795722878.7744682,
+    "ast_hash": "b796f86f8283dff69a2eaba855c7cc36",
+    "semantic_hash": "b796f86f8283dff69a2eaba855c7cc36"
+  },
+  "frontend/src/i18n/ur.json": {
+    "mtime": 1795722298.5914333,
+    "seen": 1795722878.7748744,
+    "ast_hash": "aad3f88c99f8efd2ea961555593fe15f",
+    "semantic_hash": "aad3f88c99f8efd2ea961555593fe15f",
+    "ast_empty": true
+  },
+  "frontend/src/main.tsx": {
+    "mtime": 1795722521.3682308,
+    "seen": 1795722878.7748814,
+    "ast_hash": "53edf1eddcab7ac44db7fc2fe0c756a5",
+    "semantic_hash": "53edf1eddcab7ac44db7fc2fe0c756a5"
+  },
+  "frontend/src/types/index.ts": {
+    "mtime": 1795722305.90963,
+    "seen": 1795722878.7751837,
+    "ast_hash": "b4015226799966e1119445f3a94de7a8",
+    "semantic_hash": "b4015226799966e1119445f3a94de7a8"
+  },
+  "frontend/tailwind.config.js": {
+    "mtime": 1795722262.35578,
+    "seen": 1795722878.7754366,
+    "ast_hash": "99172281b5be9543a0af63336cfb0d00",
+    "semantic_hash": "99172281b5be9543a0af63336cfb0d00"
+  },
+  "frontend/tsconfig.json": {
+    "mtime": 1795722261.7687843,
+    "seen": 1795722878.7757063,
+    "ast_hash": "b1a1be2a7af0ff821fa53ec6bbe46108",
+    "semantic_hash": "b1a1be2a7af0ff821fa53ec6bbe46108"
+  },
+  "frontend/tsconfig.node.json": {
+    "mtime": 1795722262.0534222,
+    "seen": 1795722878.7759433,
+    "ast_hash": "767b2e9abe6452170cdc399ca052cfbc",
+    "semantic_hash": "767b2e9abe6452170cdc399ca052cfbc"
+  },
+  "frontend/vite.config.ts": {
+    "mtime": 1795722261.5364134,
+    "seen": 1795722878.7762003,
+    "ast_hash": "06bfca88593b91c350d92264adf03702",
+    "semantic_hash": "06bfca88593b91c350d92264adf03702"
+  },
+  "tests/test_dashboard.py": {
+    "mtime": 1795722587.395484,
+    "seen": 1795722878.77961,
+    "ast_hash": "33bd79593005a7f5c8ebcadefe4ee7da",
+    "semantic_hash": "33bd79593005a7f5c8ebcadefe4ee7da"
   }
 }

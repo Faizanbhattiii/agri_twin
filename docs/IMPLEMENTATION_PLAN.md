@@ -297,35 +297,35 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Build a modern, responsive web application (React, Vite, TypeScript, Tailwind CSS, Leaflet, Chart.js) featuring digital twin map, live sensor stream, NDVI trajectory, yield forecast, irrigation cards, pest risk indicator, what-if playground, and English/Urdu bilingual RTL support.
 
 #### Tasks:
-- [ ] 🤖 **P7.1**: Scaffold React + Vite + TypeScript application in `frontend/` with Tailwind CSS, Lucide icons, and `react-i18next`.
-- [ ] 🤖 **P7.2**: Implement internationalization (`frontend/src/i18n/`):
+- [x] 🤖 **P7.1**: Scaffold React + Vite + TypeScript application in `frontend/` with Tailwind CSS, Lucide icons, and `react-i18next`.
+- [x] 🤖 **P7.2**: Implement internationalization (`frontend/src/i18n/`):
   - English (`en.json`) and Urdu (`ur.json`) translation dictionaries
   - Dynamic RTL / LTR layout switching and Urdu typography support
-- [ ] 🤖 **P7.3**: Build Interactive Digital Twin Map (`frontend/src/components/Map/`):
+- [x] 🤖 **P7.3**: Build Interactive Digital Twin Map (`frontend/src/components/Map/`):
   - Leaflet map rendering Punjab districts with choropleth yield stats
   - Pilot field polygon zoom-in with NDVI colormap layer overlay (Sentinel-2)
   - Sensor node location marker with live status badge
-- [ ] 🤖 **P7.4**: Build Live Telemetry & Field Overview Panel (`frontend/src/components/Telemetry/`):
+- [x] 🤖 **P7.4**: Build Live Telemetry & Field Overview Panel (`frontend/src/components/Telemetry/`):
   - Real-time updates via WebSocket connection
   - Gauges for soil moisture %, air temperature, relative humidity, and battery level
   - Prominent "SIMULATED" badge indicator whenever telemetry source is simulated
-- [ ] 🤖 **P7.5**: Build Multi-Spectral Crop-Health & Weather Charts (`frontend/src/components/Charts/`):
+- [x] 🤖 **P7.5**: Build Multi-Spectral Crop-Health & Weather Charts (`frontend/src/components/Charts/`):
   - Multi-temporal NDVI seasonal curve compared to district normal
   - 7-day weather forecast and historical temperature/rainfall bar/line charts
   - Soil moisture forecast curve showing $FC$ (Field Capacity), $PWP$ (Permanent Wilting Point), and $RAW$ threshold
-- [ ] 🤖 **P7.6**: Build Irrigation Advisory & Pest-Risk Alert Cards (`frontend/src/components/Advisories/`):
+- [x] 🤖 **P7.6**: Build Irrigation Advisory & Pest-Risk Alert Cards (`frontend/src/components/Advisories/`):
   - Visual urgency indicator (Green / Yellow / Red)
   - Actionable guidance: recommended water depth (mm) and tubewell hours
   - Pest-risk indicator (e.g. wheat rust risk based on high humidity + moderate temperature conditions)
   - Advisory disclaimer notice
-- [ ] 🤖 **P7.7**: Build Interactive What-If Climate Playground (`frontend/src/components/Simulator/`):
+- [x] 🤖 **P7.7**: Build Interactive What-If Climate Playground (`frontend/src/components/Simulator/`):
   - Sliders for Temperature offset ($\Delta T$), Rainfall modifier (%), and Irrigation delay (days)
   - Real-time comparison card: Baseline vs Simulated Yield and Stress Index
-- [ ] 🤖 **P7.8**: Add footer with attribution badges: Open-Meteo (CC BY 4.0), Copernicus Sentinel-2 / GEE, SoilGrids ISRIC.
-- [ ] 🤖 **P7.9**: Complete FastAPI backend API (`agritwin/api/`):
+- [x] 🤖 **P7.8**: Add footer with attribution badges: Open-Meteo (CC BY 4.0), Copernicus Sentinel-2 / GEE, SoilGrids ISRIC.
+- [x] 🤖 **P7.9**: Complete FastAPI backend API (`agritwin/api/`):
   - REST endpoints for fields, districts, NDVI, weather, telemetry, advisories, scenarios
   - CORS configuration, static frontend mounting option, OpenAPI `/docs` documentation
-- [ ] 🤖 **P7.10**: Build frontend integration tests and verify full UI responsive layout on desktop and mobile viewports.
+- [x] 🤖 **P7.10**: Build frontend integration tests and verify full UI responsive layout on desktop and mobile viewports.
 
 #### Definition of Done (Phase 7):
 1. Web frontend builds cleanly (`npm run build`) without TypeScript or lint errors.

@@ -5,6 +5,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [0.8.0] - 2026-11-26
+
+### Phase 7: Responsive Web Dashboard (Bilingual English/Urdu)
+- Scaffolded responsive Single Page Application (SPA) in `frontend/` powered by React 18, Vite, TypeScript, and Tailwind CSS.
+- Implemented comprehensive internationalization (`frontend/src/i18n/`) with English and Urdu translation catalogs (`en.json`, `ur.json`), dynamic RTL layout toggling, and Noto Nastaliq Urdu typography.
+- Developed Interactive Digital Twin Map (`frontend/src/components/Map/DigitalTwinMap.tsx`) leveraging Leaflet, rendering 36 Punjab district choropleths colored by wheat yield (maund/acre), interactive tooltips, pilot research field polygon overlay, and sensor node location markers.
+- Built Live Telemetry panel (`frontend/src/components/Telemetry/TelemetryGauges.tsx`) with real-time WebSocket stream (`/ws/telemetry`), 4 visual gauges (soil moisture %, air temperature, humidity, battery), and prominent `SIMULATED` badge indicator.
+- Built Multi-Spectral Crop-Health & Weather Charts (`frontend/src/components/Charts/CropHealthCharts.tsx`) rendering 27-week Sentinel-2 NDVI trajectory vs district normal, 7-day Open-Meteo weather forecast, and 7-day projected soil moisture depletion with Field Capacity, Wilting Point, and RAW thresholds.
+- Built Irrigation Advisory & Pest Risk Cards (`frontend/src/components/Advisories/IrrigationCard.tsx`) displaying urgency status (OPTIMAL, MONITOR, CRITICAL_IRRIGATE), recommended water depth (mm), 1-cusec tubewell pumping hours, rust & aphid pest risk indicators, and ethical disclaimer.
+- Built Interactive What-If Climate Playground (`frontend/src/components/Simulator/WhatIfPlayground.tsx`) with preset selectors, interactive temperature/rainfall/irrigation sliders, real-time yield comparison cards, agronomic stress indices, and bilingual mitigation advice.
+- Built Dashboard REST API router (`agritwin/api/dashboard.py`) and mounted frontend static production bundle on FastAPI root (`/`), passing CORS and static asset resolution.
+- Authored automated tests in `tests/test_dashboard.py` verifying all dashboard endpoints and static single-page application delivery (55/55 passing project-wide).
+- Compiled clean production build (`npm run build`) in 9.66s without warnings or errors.
+
+---
+
 ## [0.7.0] - 2026-11-26
 
 ### Phase 6: Climate-Risk "What-If" Scenario Simulator
