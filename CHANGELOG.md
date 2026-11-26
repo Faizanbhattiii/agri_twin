@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [0.6.0] - 2026-11-26
+
+### Phase 5: Soil-Moisture Forecaster & Irrigation Advisory Engine
+- Implemented FAO-56 Penman-Monteith daily reference evapotranspiration (ET0) calculator in gritwin/advisory/evapotranspiration.py including solar declination, extraterrestrial radiation, albedo, net radiation, psychrometric constant, and elevation/latitude physics, with Hargreaves-Samani fallback.
+- Implemented crop water requirement calculator in gritwin/advisory/crop_water.py with 4-stage phenological $ curve (Initial 0.35, Development 0.35->1.15, Mid-season 1.15, Late-season 1.15->0.40), root depth expansion (0.3m to 1.2m), and water stress coefficient $.
+- Implemented daily root-zone soil water balance model in gritwin/advisory/water_balance.py tracking Total Available Water ($), Readily Available Water ($), root depletion ($), effective rainfall runoff, deep percolation, and telemetry sensor fusion.
+- Implemented 7-day soil moisture and water stress trajectory forecaster in gritwin/models/soil_moisture_forecaster.py simulating depletion forward using weather forecasts.
+- Implemented irrigation advisory rule engine in gritwin/advisory/irrigation_engine.py producing 4 urgency statuses (OPTIMAL, MONITOR, CRITICAL_IRRIGATE, RAIN_DEFERRED), gross depth, volume (^3$), tubewell hours (1-cusec / 101.94 ^3$/hr), bilingual English & Urdu Nastaliq action texts, and mandatory ethical disclaimer.
+- Added comprehensive unit tests in 	ests/test_advisory.py verifying mathematical correctness, agronomic scaling, sensor fusion, and rain deferral (41/41 passing project-wide).
+- Documented advisory architecture in gritwin/advisory/README.md and updated HUMAN_TASKS.md for local agronomic validation.
+
+---
+
 ## [0.5.0] - 2026-11-26
 
 ### Phase 4: Feature Engineering, DeepAgroNet & Baseline Benchmarks
