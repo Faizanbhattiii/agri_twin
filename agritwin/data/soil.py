@@ -76,6 +76,11 @@ class SoilGridsClient:
 
         # Fallback profile (Rule 4: source='simulated')
         profile = self._generate_punjab_soil_profile(latitude, longitude)
+        try:
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                json.dump(profile, f, indent=2)
+        except Exception:
+            pass
         return profile
 
     def _parse_soilgrids_response(

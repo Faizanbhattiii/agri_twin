@@ -245,19 +245,19 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Develop short-term soil moisture forecasting, FAO-56 Penman-Monteith daily water balance engine, and bilingual irrigation advisory generation.
 
 #### Tasks:
-- [ ] 🤖 **P5.1**: Implement FAO-56 Penman-Monteith Reference Evapotranspiration ($ET_0$) calculator (`agritwin/advisory/evapotranspiration.py`) using net solar radiation, temperature, wind speed, and vapor pressure.
-- [ ] 🤖 **P5.2**: Implement Crop Evapotranspiration ($ET_c = K_c \times ET_0$) module utilizing dynamic $K_c$ curve for Pakistani wheat stages (Initial: 0.35, Crop Development: 0.75, Mid-Season: 1.15, Late Season: 0.45).
-- [ ] 🤖 **P5.3**: Build Soil Moisture Balance & Depletion Model (`agritwin/advisory/water_balance.py`):
+- [x] 🤖 **P5.1**: Implement FAO-56 Penman-Monteith Reference Evapotranspiration ($ET_0$) calculator (`agritwin/advisory/evapotranspiration.py`) using net solar radiation, temperature, wind speed, and vapor pressure.
+- [x] 🤖 **P5.2**: Implement Crop Evapotranspiration ($ET_c = K_c \times ET_0$) module utilizing dynamic $K_c$ curve for Pakistani wheat stages (Initial: 0.35, Crop Development: 0.75, Mid-Season: 1.15, Late Season: 0.45).
+- [x] 🤖 **P5.3**: Build Soil Moisture Balance & Depletion Model (`agritwin/advisory/water_balance.py`):
   - Total Available Water ($TAW = 1000 \times (\theta_{FC} - \theta_{WP}) \times Z_r$)
   - Readily Available Water ($RAW = p \times TAW$, with depletion factor $p \approx 0.55$ for wheat)
   - Daily root zone depletion tracking fusing rainfall, irrigation events, $ET_c$, and ground ESP32 moisture readings
-- [ ] 🤖 **P5.4**: Implement 7-day Soil Moisture Sequence Forecaster (`agritwin/models/soil_moisture_forecaster.py`) predicting volumetric soil water content over next 7 days based on weather forecast.
-- [ ] 🤖 **P5.5**: Implement Irrigation Advisory Rule Engine (`agritwin/advisory/irrigation_engine.py`):
+- [x] 🤖 **P5.4**: Implement 7-day Soil Moisture Sequence Forecaster (`agritwin/models/soil_moisture_forecaster.py`) predicting volumetric soil water content over next 7 days based on weather forecast.
+- [x] 🤖 **P5.5**: Implement Irrigation Advisory Rule Engine (`agritwin/advisory/irrigation_engine.py`):
   - Urgency categorization: `OPTIMAL` (green), `MONITOR` (yellow), `CRITICAL_IRRIGATE` (red)
   - Recommendation outputs: Recommended water depth (mm), volume per acre ($m^3$/acre), tubewell pumping hours (based on standard 1-cusec tubewell)
   - Bilingual advisory messages (English & Urdu Nastaliq-friendly text)
   - Mandatory disclaimer: "Advisory only; calibrate with local field conditions"
-- [ ] 🤖 **P5.6**: Write comprehensive tests (`tests/test_advisory.py`) covering edge cases (heavy rain forecast, extreme heat, probe failure fallback).
+- [x] 🤖 **P5.6**: Write comprehensive tests (`tests/test_advisory.py`) covering edge cases (heavy rain forecast, extreme heat, probe failure fallback).
 
 #### Definition of Done (Phase 5):
 1. FAO-56 Penman-Monteith formulas tested and verified against standard benchmark values.
