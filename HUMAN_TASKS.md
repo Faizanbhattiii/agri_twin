@@ -14,7 +14,7 @@ Whenever an agent hits a human task (`🧑`), the automated workflow falls back 
 | **Phase 2** | H-02 | (Optional) Configure PostgreSQL database instance | ⚪ Optional (SQLite active) | Optional |
 | **Phase 3** | H-03 (P3.3) | Physical ESP32 sensor node wiring and assembly (irmware/README.md ready) | ⏳ Ready for hardware build | Recommended (Simulator active) |
 | **Phase 3** | H-04 | Flash firmware to ESP32 (irmware/src/config.h.example ready) | ⏳ Ready for hardware build | Recommended (Simulator active) |
-| **Phase 4** | H-05 | Review model benchmark report (`docs/MODEL_BENCHMARK.md`) with supervisor | ⏳ Pending Phase 4 | Recommended |
+| **Phase 4** | H-05 | Review model benchmark report (`docs/MODEL_BENCHMARK.md`) with supervisor | 🟢 Ready for review (Report & models trained) | Recommended |
 | **Phase 5** | H-06 | Review irrigation recommendations against local farming practices | ⏳ Pending Phase 5 | Recommended |
 | **Phase 6** | H-07 | Validate climate stress simulation scenarios | ⏳ Pending Phase 6 | Recommended |
 | **Phase 7** | H-08 | Review Urdu translations and UI in browser | ⏳ Pending Phase 7 | Recommended |
@@ -91,7 +91,14 @@ Whenever an agent hits a human task (`🧑`), the automated workflow falls back 
 ### Phase 4: Feature Engineering & Model Training
 #### 🧑 Task H-05: Review Model Benchmark Results
 - **Objective:** Review the computed metrics ($R^2$, $RMSE$, $MAE$) in `docs/MODEL_BENCHMARK.md`.
-- **Action:** Discuss the findings with your supervisor Dr. Asifa Awan to ensure the framing is ready for your thesis and paper.
+- **Authentic Benchmark Summary (Leave-One-Season-Out across 10 seasons, 360 observations):**
+  - **Random Forest**: $R^2 = 0.9185$, $RMSE = 161.8 \text{ kg/ha}$ ($1.64 \text{ maund/acre}$), $MAE = 130.1 \text{ kg/ha}$
+  - **XGBoost**: $R^2 = 0.9080$, $RMSE = 171.9 \text{ kg/ha}$ ($1.74 \text{ maund/acre}$), $MAE = 137.1 \text{ kg/ha}$
+  - **DeepAgroNet**: $R^2 = 0.8697$, $RMSE = 204.6 \text{ kg/ha}$ ($2.07 \text{ maund/acre}$), $MAE = 160.7 \text{ kg/ha}$, with 95% Gaussian uncertainty bounds
+  - **Ridge (Linear baseline)**: $R^2 = 0.5904$, $RMSE = 362.8 \text{ kg/ha}$ ($3.67 \text{ maund/acre}$)
+- **Action:** Discuss the findings with your supervisor Dr. Asifa Awan:
+  1. Highlight that Random Forest and XGBoost excel on aggregated tabular features, while DeepAgroNet provides spatiotemporal sequence modeling and calibrated uncertainty intervals.
+  2. Emphasize that all evaluations followed rigorous Leave-One-Season-Out (LOSO) temporal cross-validation without data leakage.
 
 ---
 

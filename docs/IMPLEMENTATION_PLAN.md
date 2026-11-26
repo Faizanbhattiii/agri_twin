@@ -207,29 +207,29 @@ This file is the **single source of truth**. Save it in the repo as `docs/IMPLEM
 **Objective:** Build unified feature engineering module (strict train/serve parity) and develop, train, evaluate, and benchmark DeepAgroNet (1D-CNN + LSTM) against Random Forest and XGBoost for wheat yield forecasting.
 
 #### Tasks:
-- [ ] 🤖 **P4.1**: Build unified feature engineering module (`agritwin/features/pipeline.py`):
+- [x] 🤖 **P4.1**: Build unified feature engineering module (`agritwin/features/pipeline.py`):
   - Weekly temporal aggregation aligned with wheat season window (Nov 1 to May 10, weeks 1 to 27)
   - Accumulated Growing Degree Days ($GDD = \sum \max(0, \frac{T_{max} + T_{min}}{2} - T_{base})$ with $T_{base}=5^\circ C$)
   - Cumulative rainfall, extreme heat days ($T_{max} > 32^\circ C$ during grain filling), Vapor Pressure Deficit (VPD)
   - Weekly Sentinel-2 NDVI trajectory interpolation and peak NDVI timing
   - Static soil feature vector (clay %, sand %, SOC, pH, water capacity)
   - Identical pipeline code for both offline batch training and live field inference
-- [ ] 🤖 **P4.2**: Implement baseline regression models (`agritwin/models/baselines.py`):
+- [x] 🤖 **P4.2**: Implement baseline regression models (`agritwin/models/baselines.py`):
   - Ridge / Lasso Regression baseline
   - Random Forest Regressor with hyperparameter tuning
   - XGBoost Regressor with early stopping
-- [ ] 🤖 **P4.3**: Implement DeepAgroNet architecture in PyTorch (`agritwin/models/deepagronet.py`):
+- [x] 🤖 **P4.3**: Implement DeepAgroNet architecture in PyTorch (`agritwin/models/deepagronet.py`):
   - 1D-CNN temporal convolutional blocks (extracting multi-week agronomic phase patterns)
   - Bidirectional LSTM layer (capturing full-season sequential growth dynamics)
   - Multi-layer Perceptron (MLP) fusion branch combining sequential features with static soil properties
   - Prediction head for district/field yield (kg/ha and maund/acre) with uncertainty interval
-- [ ] 🤖 **P4.4**: Build rigorous Cross-Validation & Benchmark Harness (`agritwin/models/train.py`):
+- [x] 🤖 **P4.4**: Build rigorous Cross-Validation & Benchmark Harness (`agritwin/models/train.py`):
   - Leave-One-Season-Out (LOSO) cross-validation across all seasons (2014–2023)
   - Leave-Districts-Out (LDO) cross-validation evaluating geographic generalization
   - Strict calculation of $R^2$, $RMSE$, $MAE$, and Mean Bias Error ($MBE$) across identical folds
-- [ ] 🤖 **P4.5**: Run model training, hyperparameter optimization, and generate benchmark report (`docs/MODEL_BENCHMARK.md`) with genuine computed metrics without fabricating numbers.
-- [ ] 🤖 **P4.6**: Save serialized model artifacts (`models/deepagronet_best.pt`, `models/rf_best.joblib`, `models/xgb_best.json`) with version hash and feature manifest.
-- [ ] 🤖 **P4.7**: Write unit and parity tests (`tests/test_models.py` and `tests/test_feature_parity.py`).
+- [x] 🤖 **P4.5**: Run model training, hyperparameter optimization, and generate benchmark report (`docs/MODEL_BENCHMARK.md`) with genuine computed metrics without fabricating numbers.
+- [x] 🤖 **P4.6**: Save serialized model artifacts (`models/deepagronet_best.pt`, `models/rf_best.joblib`, `models/xgb_best.json`) with version hash and feature manifest.
+- [x] 🤖 **P4.7**: Write unit and parity tests (`tests/test_models.py` and `tests/test_feature_parity.py`).
 
 #### Definition of Done (Phase 4):
 1. Feature pipeline transforms raw data into sequence and tabular tensors identically for training and inference.

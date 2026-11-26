@@ -5,6 +5,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [0.5.0] - 2026-11-26
+
+### Phase 4: Feature Engineering, DeepAgroNet & Baseline Benchmarks
+- Implemented unified feature pipeline in `agritwin/features/pipeline.py` enforcing strict train/serve parity (Rule 9) across training and live inference.
+- Engineered 27-week temporal sequence (GDD with $T_{base}=5^\circ\text{C}$, precipitation, $T_{mean}$, $T_{max}$, $T_{min}$, solar radiation, VPD, extreme heat days $T_{max} > 32^\circ\text{C}$, interpolated Sentinel-2 NDVI/EVI).
+- Engineered 9 static soil & geospatial features (clay, sand, silt, SOC, pH, bulk density, TAW, latitude, longitude) and 49-dimensional tabular dataset with 4 growth-stage aggregations.
+- Implemented `PunjabWheatDataset` in `agritwin/features/dataset.py` with multi-threaded prefetching, processed NPZ/CSV disk caching, and Leave-One-Season-Out (LOSO) and Leave-Districts-Out (LDO) cross-validation iterators.
+- Implemented baseline regressors in `agritwin/models/baselines.py` (RidgeCV, Random Forest, XGBoost) with unified fit/predict, feature importances, and serialization.
+- Implemented `DeepAgroNet` in `agritwin/models/deepagronet.py` combining 1D-CNN temporal feature extractors, 2-layer Bidirectional LSTM, parametric temporal attention pooling across 27 weeks, static soil MLP branch, and multimodal fusion head with calibrated Gaussian uncertainty prediction ($\mu, \sigma$) and 95% confidence intervals.
+- Implemented evaluation metrics and unit conversions in `agritwin/models/metrics.py`.
+- Built cross-validation and benchmark harness in `agritwin/models/train.py` executing 10-season LOSO temporal cross-validation without data leakage.
+- Generated genuine benchmark report in `docs/MODEL_BENCHMARK.md` (RF: $R^2=0.9185$, $RMSE=161.8\text{ kg/ha}$; XGBoost: $R^2=0.9080$, $RMSE=171.9\text{ kg/ha}$; DeepAgroNet: $R^2=0.8697$, $RMSE=204.6\text{ kg/ha}$; Ridge: $R^2=0.5904$, $RMSE=362.8\text{ kg/ha}$).
+- Serialized production models under `models/` (`deepagronet_best.pt`, `rf_best.joblib`, `xgb_best.json`, `ridge_best.joblib`, `pipeline_scaler.pkl`, `model_manifest.json`).
+- Authored package documentation in `agritwin/features/README.md` and `agritwin/models/README.md`.
+- Authored automated tests in `tests/test_feature_parity.py` and `tests/test_models.py` (34/34 passing project-wide).
+- Updated `HUMAN_TASKS.md` for task H-05 review readiness.
+
+---
+
 ## [0.4.0] - 2026-11-24
 
 ### Phase 3: Field Node Firmware, Simulator & Telemetry Ingestion
