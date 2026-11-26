@@ -77,3 +77,11 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 .DS_Store
+
+# Data cache
+data/cache/
+
+# Graphify cache
+graphify-out/cache/
+graphify-out/.graphify_partition_cache.json
+graphify-out/.graphify_analysis.json

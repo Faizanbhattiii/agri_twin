@@ -27,3 +27,4 @@ This file tracks all key technical, architectural, and design decisions for Agri
 | **D17** | Bilingual UI: English and Urdu RTL | Accessibility for local Pakistani extension workers and farmers. | Accepted |
 | **D18** | Advisory-only disclaimer banner | Ethical transparency: AI recommendations support rather than replace human agronomist judgement. | Accepted |
 | **D19** | Dynamic roadmap completion | User approved completing detailed Phases 0 to 8 in `docs/IMPLEMENTATION_PLAN.md` based on initial scope and architecture specifications. | Accepted |
+| **D20** | DeepAgroNet target standardization & uncertainty calibration | Standardize target yields during deep neural network optimization to guarantee gradient stability under Huber loss, and register `target_mean` and `target_std` model buffers to automatically output real kg/ha and maund/acre bounds in inference. | Accepted |
